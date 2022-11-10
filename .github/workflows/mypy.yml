@@ -1,0 +1,30 @@
+name: MyPy
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches: [ main ]
+    paths:
+      - 'src/relic/**'
+      - '.github/workflows/mypy.yml'
+      - 'mypy.ini'
+      - 'setup.cfg'
+      - 'setup.py'
+      - 'MANIFEST.in'
+
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'src/relic/**'
+      - '.github/workflows/mypy.yml'
+      - 'mypy.ini'
+      - 'setup.cfg'
+      - 'setup.py'
+      - 'MANIFEST.in'
+
+jobs:
+  mypy:
+    uses: MAK-Relic-Tool/Workflows/.github/workflows/mypy.yml@main
+    with:
+      package: "relic.sga.v10"

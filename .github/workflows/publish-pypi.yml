@@ -1,0 +1,13 @@
+name: Upload to PyPI
+
+on:
+  workflow_dispatch:
+
+  release:
+    types: [published]
+
+jobs:
+  pypi:
+    uses: MAK-Relic-Tool/Workflows/.github/workflows/publish-to-pypi.yml@main
+    secrets:
+      pypi-token: ${{ secrets.PYPI_API_TOKEN }}
