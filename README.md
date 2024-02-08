@@ -1,3 +1,8 @@
+# Archival Notice
+Moved outside the current scope.
+
+See Mak-Relic-Tool/Issue-Tracker#45 for more details
+
 # Relic Tool - SGA - v10
 [![PyPI](https://img.shields.io/pypi/v/relic-tool-sga-v10)](https://pypi.org/project/relic-tool-sga-v10/)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/relic-tool-sga-v10)](https://www.python.org/downloads/)
